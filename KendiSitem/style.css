@@ -1,0 +1,400 @@
+html
+{
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.boldfont
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    
+    background: url(background_3.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    
+}
+
+
+/*Navbar*/
+
+header
+{
+    display: block;
+    height: 12rem;
+}
+
+nav
+{
+    height: 12rem;
+    width: 100%;
+    background-color: rgba(138,206,207,0.6);
+    position: fixed;
+    display: block;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+    /*
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    opacity: ;
+    */
+}
+
+#container
+{
+    width: 125rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+#myImage
+{
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-bottom: .8rem;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+nav #container img
+{
+    height: 100%;
+    border-radius: 40%;
+    
+}
+
+#myName
+{
+    font-size: 2rem;
+    margin-left: 1rem;
+    display: inline-block;
+    position: relative;
+    bottom: calc(12rem / 3 - 1rem);
+    font-size: 2.4rem;
+    
+}
+
+
+
+#nav-links
+{
+    float: right;
+    display: inline-block;
+    margin-top: calc(12rem / 3);
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.nav-item
+{
+    
+    display: inline-block;
+    font-size: 3.2rem;
+    margin-right: 1.4rem;
+    letter-spacing: 0.2rem;
+    
+}
+
+ul li a
+{
+    color: #222222;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+ul li a:hover
+{
+    color: chocolate;
+    text-shadow: 2px 2px gray;
+}
+
+
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*Content*/
+
+.objects
+{
+    width: 125rem;
+    height: 7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16%;
+    
+}
+
+#ad-1
+{
+    display: inline-block;
+    width: 32rem;
+    height: 25rem;
+    position: absolute;
+    top: calc((125rem * 15 / 100) + 17rem);
+}
+
+#ad-2
+{
+    display: inline-block;
+    width: 32rem;
+    height: 25rem;
+    position: absolute;
+    top: calc((125rem * 15 / 100) + 17rem);
+    right: 0;
+     
+}
+
+.specifications
+{
+    width: 125rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+.specs
+{
+    height: 5rem;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text
+{
+    display: inline-block;
+    color: darkblue;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#coffee
+{
+    width: 125rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+}
+
+
+#coffee .tooltiptext
+{ 
+    font-size: 2.5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pen .tooltiptext
+{
+    border: 1px solid gray;
+    font-size: 2.5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+}
+
+footer
+{
+    position: absolute;
+    top: 95vh;
+    border-top: 3px solid rgba(95,95,95,0.9);
+    width: 125rem;
+    margin-left: calc((100% - 125rem) / 2);
+    
+}
+
+#copyright
+{
+    
+    font-size: 2rem;
+    font-weight: 550;
+    
+}
+
+
+@media screen and (orientation: portrait) and (max-width: 1365px) 
+{
+    .objects
+    {
+        margin-top: 70%;
+    }
+    html
+    {
+        font-size: 7px;
+    }
+    body
+    {
+        width: 100%;
+        height: 100%;
+    
+        -webkit-background-size: 100%; 
+        -moz-background-size: 100%; 
+        -o-background-size: 100%; 
+        background-size: 100% 100%; 
+        
+        background: url(background_5.jpg) no-repeat center center fixed #000; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    .specs
+    {
+        margin-top: 50%;
+    }
+    
+	#pen
+	{
+		margin-top: 1.5rem;
+	}
+    .specifications
+    {
+        font-size: 4.8rem;
+        
+    }
+    
+    #coffee .tooltiptext
+    {
+        font-size: 3.5rem;
+    }
+    
+    #pen .tooltiptext
+    {
+        font-size: 3.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1366px) and (orientation: landscape)
+{
+    .objects
+    {
+        margin-top: 14%;
+    }
+    html
+    {
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 1920px)
+{
+    .objects
+    {
+        margin-top: 20%;
+    }
+}
+
+/*
+
+#coffee
+{
+    position: absolute;
+    width: 32rem;
+    height: 32rem;
+    top: 141rem;
+    left: 43%;
+}
+
+#coffee .tooltiptext
+{
+    display: inline-block;
+    visibility: hidden;
+    font-size: 2.5rem;
+    width: 25rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: 35rem;
+}
+
+#coffee:hover .tooltiptext
+{
+    visibility: visible;
+}
+
+#pen
+{
+    position: absolute;
+    width: 5rem;
+    height: 42rem;
+    top: 115rem;
+    left: 20rem;
+}
+
+#pen .tooltiptext
+{
+    display: inline-block;
+    visibility: hidden;
+    font-size: 2.5rem;
+    width: 25rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: 7rem;
+}
+
+#pen:hover .tooltiptext
+{
+    visibility: visible;
+    
+}
+
+*/

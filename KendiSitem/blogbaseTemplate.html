@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog_1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba2f68b589.js" crossorigin="anonymous"></script>
+    
+    
+    <style>
+
+            html
+        {
+            font-size: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .font
+        {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .boldfont
+        {
+            font-family: 'Roboto Slab', serif;
+            font-weight: bold;
+        }
+        body
+        {
+            width: 100%;
+            height: 100%;
+
+            -webkit-background-size: 100%; 
+            -moz-background-size: 100%; 
+            -o-background-size: 100%; 
+            background-size: 100%; 
+
+            background: url(background_3.jpg) no-repeat center center fixed #000; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+
+        }
+
+
+        /*Navbar*/
+
+        header
+        {
+            display: block;
+            height: 12rem;
+        }
+
+        nav
+        {
+            height: 12rem;
+            width: 100%;
+            background-color: rgba(138,206,207,0.6);
+            position: fixed;
+            display: block;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            /*
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            opacity: ;
+            */
+        }
+
+        #container
+        {
+            width: 125rem;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+        }
+
+        #myImage
+        {
+            padding-top: 1.5rem;
+            padding-left: 3rem;
+            padding-bottom: .8rem;
+            height: 100%;
+            display: inline-block;
+
+        }
+
+        nav #container img
+        {
+            height: 100%;
+            border-radius: 40%;
+
+        }
+
+        #myName
+        {
+            font-size: 2rem;
+            margin-left: 1rem;
+            display: inline-block;
+            position: relative;
+            bottom: calc(12rem / 3 - 1rem);
+            font-size: 2.4rem;
+
+        }
+
+
+
+        #nav-links
+        {
+            float: right;
+            display: inline-block;
+            margin-top: calc(12rem / 3);
+        }
+
+        ul
+        {
+            list-style-type: none;
+        }
+
+        .nav-item
+        {
+
+            display: inline-block;
+            font-size: 3.2rem;
+            margin-right: 1.4rem;
+            letter-spacing: 0.2rem;
+
+        }
+
+        ul li a
+        {
+            color: #222222;
+            text-decoration: none;
+            transition: color 0.4s;
+        }
+
+        ul li a:hover
+        {
+            color: chocolate;
+            text-shadow: 2px 2px gray;
+        }
+
+
+        .clearfix::after
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
+ 
+        /*Blog-Content*/
+        
+        #blogContent
+        {
+            margin-top: 2rem;
+            width: 125rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .blogs
+        {
+            max-width: 25%;
+            background-color: #C6CAC9;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            border-radius: 1rem;
+            
+        }
+        
+        .blogImage img
+        {
+            width: 100%;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        
+        .blogText
+        {
+            text-indent: 1rem;
+            font-size: 2rem;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+        }
+        
+        .blogLink
+        {
+            text-decoration: none;
+            color: black;
+            
+        }
+        
+        
+        /*Footer*/
+        
+        footer
+        {
+            position: absolute;
+            top: 95vh;
+            border-top: 3px solid rgba(95,95,95,0.9);
+            width: 125rem;
+            margin-left: calc((100% - 125rem) / 2);
+
+        }
+
+        #copyright
+        {
+
+            font-size: 3rem;
+            font-weight: 550;
+
+        }
+        
+        
+        /*MediaQuery*/
+        
+
+        @media screen and (orientation: portrait) and (max-width: 1365px) 
+        {
+            html
+            {
+                font-size: 7px;
+            }
+            body
+            {
+                width: 100%;
+                height: 100%;
+
+                -webkit-background-size: 100%; 
+                -moz-background-size: 100%; 
+                -o-background-size: 100%; 
+                background-size: 100% 100%; 
+
+                background: url(background_5.jpg) no-repeat center center fixed #000; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+        }
+
+        @media screen and (max-width: 1366px) and (orientation: landscape)
+        {
+            html
+            {
+                font-size: 7px;
+            }
+        }
+        
+
+
+    </style>
+    
+</head>
+<body>
+   
+   <header>
+
+        <nav>
+
+            <div id="container" class="clearfix">
+
+                <div id="myImage">
+                    <img src="ben.jpeg" alt="">
+                </div>
+
+                <div id="myName" class="boldfont">Osman Güler</div>
+
+                <div id="nav-links">
+
+                    <ul>
+                        <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
+                        <li class="nav-item"><a href="blogTemplate.html" class="boldfont">Blog</a></li>
+                        <li class="nav-item"><a href="myProjects.html" class="boldfont">My Projects</a></li>
+                        <li class="nav-item"> <a href="about.html" class="boldfont">About</a></li>
+                        <li class="nav-item"><a href="mailto: iletisim@osmanguler.com" class="boldfont" target="_blank" alt="Contact Osman Güler via mail.">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    
+    <div id="blogContent">
+        
+        <div class="blogs">
+            <div class="blogImage">
+               
+               <a href="blogKonu-1" class="blogLink">
+               
+                <img src="https://www.howtogeek.com/wp-content/uploads/2012/08/image366.png" alt="">
+                
+                <div class="blogText">
+                    <p>Blog Denemesi olarak hazırlanıyor</p>
+                </div>
+                
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="blogs">
+            <div class="blogImage"></div>
+        </div>
+        
+        <div class="blogs">
+            <div class="blogImage"></div>
+        </div>
+        
+        <div class="blogs">
+            <div class="blogImage"></div>
+        </div>
+        
+    </div>
+    
+    
+    
+    <footer>
+        <div id="copyright">
+            	&copy; Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+    
+</body>
+</html>

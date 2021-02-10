@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="myprojectsStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=McLaren|Open+Sans:400,800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba2f68b589.js" crossorigin="anonymous"></script>
+    
+    <script data-ad-client="ca-pub-9019967251317958" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <div id="container" class="clearfix">
+
+                <div id="myImage">
+                    <img src="ben.jpeg" alt="">
+                </div>
+
+                <div id="myName" class="boldfont">Osman Güler</div>
+
+                <div id="nav-links">
+
+                    <ul>
+                        <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
+                        <li class="nav-item"><a href="myProjects.html" class="boldfont">My Projects</a></li>
+                        <li class="nav-item"> <a href="about.html" class="boldfont">About</a></li>
+                        <li class="nav-item"><a href="mailto: guler_osman@yahoo.com" class="boldfont" target="_blank" alt="Contact Osaman Güler via mail.">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <form action="" name="login" id="form">
+            <div id="form-elements">
+                <label for="pswrd">Please contact me to for password.</label><br>
+                <input type="password" placeholder="password" name="pswrd" id="password"><br>
+                <input type="button" onclick="check(this.form)" value="Login" id="button"> 
+            </div>
+        </form>
+
+        <script language="javascript">
+            function check(form) {
+                if (form.pswrd.value == "SifreProjects") 
+                {
+                    window.open('https://drive.google.com/drive/folders/1v_7USwABfN2hgWazS6ONXVjRS0ELZZLE?usp=sharing')
+                } else 
+                {
+                    alert("Password is wrong! Please contact me to for password.")
+                }
+            }
+
+        </script>
+    </div>
+    <footer>
+        <div id="copyright">
+            	&copy; Tüm Hakları Saklıdır.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

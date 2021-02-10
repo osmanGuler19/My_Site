@@ -1,0 +1,297 @@
+html
+{
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+.boldfont
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+body
+{
+
+    width: 100%;
+    height: 100%;
+    
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    
+    background: url(background_2.jpg) no-repeat center center fixed #000; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+
+/*Navbar*/
+
+header
+{
+    display: block;
+    height: 12rem;
+}
+
+nav
+{
+    height: 12rem;
+    width: 100%;
+    background-color: rgba(138,206,207,0.6);
+    position: fixed;
+    display: block;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+    /*
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    opacity: ;
+    */
+}
+
+#container
+{
+    width: 125rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+#myImage
+{
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-bottom: .8rem;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+nav #container img
+{
+    height: 100%;
+    border-radius: 40%;
+    
+}
+
+#myName
+{
+    font-size: 2rem;
+    margin-left: 1rem;
+    display: inline-block;
+    position: relative;
+    bottom: calc(12rem / 3 - 1rem);
+    font-size: 2.4rem;
+    
+}
+
+
+
+#nav-links
+{
+    float: right;
+    display: inline-block;
+    margin-top: calc(12rem / 3);
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.nav-item
+{
+    
+    display: inline-block;
+    font-size: 3.2rem;
+    margin-right: 1.4rem;
+    letter-spacing: 0.2rem;
+    
+}
+
+ul li a
+{
+    color: #222222;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+ul li a:hover
+{
+    color: chocolate;
+    text-shadow: 2px 2px gray;
+}
+
+
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Content*/
+
+.content
+{
+    width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+}
+
+#form-elements
+{
+    margin-top: 20rem;
+    background-color: dimgrey;
+    border-radius: 10px;
+    font-size: 3.5rem;
+    padding: 1.5rem 2rem;
+}
+
+input[type=password]
+{
+    width: 50%;
+    font-size: 1.7rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+input[type=button]
+{
+    border-radius: 5px;
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+    transition: box-shadow 0.3s, font-size 0.2s;
+    transition-timing-function: linear;
+}
+
+input[type=button]:hover
+{
+    box-shadow: 0.3rem 0.2rem gray;
+    cursor: pointer;
+    font-size: 1.8rem;
+    
+}
+label
+{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1366px)
+{
+    html
+    {
+        font-size: 7px;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 1365px) 
+{
+    body
+        {
+            width: 100%;
+            height: 100%;
+
+            -webkit-background-size: 100%; 
+            -moz-background-size: 100%; 
+            -o-background-size: 100%; 
+            background-size: 100% 100%; 
+
+            background: url(background_6.jpg) no-repeat center center fixed #000; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    .content
+    {
+        margin-top: 50%;
+        width: 60rem;    
+    }
+    
+    #form-elements
+    {
+        padding: 6rem 8rem;
+        font-size: 4rem;
+    }
+    
+    footer
+    {
+        top: 80vh;
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 1920px)
+{
+    body
+        {
+            width: 100%;
+            height: 100%;
+
+            -webkit-background-size: 100%; 
+            -moz-background-size: 100%; 
+            -o-background-size: 100%; 
+            background-size: 100% 100%; 
+
+            background: url(background_6.jpg) no-repeat center center fixed #000; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    .content
+    {
+        margin-top: 50%;
+        width: 60rem;    
+    }
+    
+    #form-elements
+    {
+        padding: 6rem 8rem;
+        font-size: 4rem;
+    }
+}
+
+
+/*Footer*/
+
+footer
+{
+    position: absolute;
+    top: 95vh;
+    border-top: 3px solid rgba(95,95,95,0.9);
+    width: 125rem;
+    margin-left: calc((100% - 125rem) / 2);
+    
+}
+
+#copyright
+{
+    
+    font-size: 2rem;
+    font-weight: 550;
+    
+}
